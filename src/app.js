@@ -30,7 +30,6 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About ',
-        img: '/img/pic1.jpg',
         name: 'Karthi Sanjivi'
     });
 });
