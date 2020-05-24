@@ -29,7 +29,7 @@ weatherForm.addEventListener('submit', (e) => {
     messageTwo.textContent = '';
     messageError.textContent = '';
 
-    const weatherApiUrl = 'http://localhost:3000/weather?address=' + location;
+    const weatherApiUrl = '/weather?address=' + location;
 
     fetch(weatherApiUrl).then((response) => {
         response.json().then((data) => {
